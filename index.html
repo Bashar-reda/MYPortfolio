@@ -764,6 +764,14 @@ footer  { position: relative; z-index: 8; }
 .sc-imgs{grid-template-columns:minmax(0,2fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr) minmax(0,1fr);height:300px;}
 .sc-imgs.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr);}
 .sc-imgs img{min-width:0;min-height:0;max-width:100%;max-height:100%;}
+
+/* Tall portrait screens (phones, incl. "Desktop site" mode): no full-height panels / stacking */
+@media(max-width:860px),(orientation:portrait){
+  #hero{min-height:0 !important;}
+  #hero,#clients,#exp,#skills,#portfolio,#edu,#contact{position:static !important;border-radius:0 !important;box-shadow:none !important;min-height:0 !important;}
+  #edu,#contact{display:block !important;}
+  .sc{top:calc(70px + var(--i)*18px);}
+}
 </style>
 <link rel="preload" as="image" href="f2c506609e65.webp">
 </head>
@@ -1124,206 +1132,222 @@ footer  { position: relative; z-index: 8; }
 
   <div class="port-grid open" id="cat-social">
   <div class="pg-item" onclick="openLB(0, 'social')">
+    <img src="3e65263d6726.webp" alt="eYouth Business × IBM SkillsBuild — Intro to AI Course" loading="lazy">
+    <div class="pg-overlay"><span>eYouth Business × IBM SkillsBuild — Intro to AI Course</span></div>
+  </div>
+  <div class="pg-item" onclick="openLB(1, 'social')">
+    <img src="deed21981586.webp" alt="eYouth Business × IBM SkillsBuild — How AI Shows Up at Work" loading="lazy">
+    <div class="pg-overlay"><span>eYouth Business × IBM SkillsBuild — How AI Shows Up at Work</span></div>
+  </div>
+  <div class="pg-item" onclick="openLB(2, 'social')">
+    <img src="779b57f81878.webp" alt="eYouth Business × IBM SkillsBuild — Build with IBM Bob" loading="lazy">
+    <div class="pg-overlay"><span>eYouth Business × IBM SkillsBuild — Build with IBM Bob</span></div>
+  </div>
+  <div class="pg-item" onclick="openLB(3, 'social')">
+    <img src="4d93ae670e35.webp" alt="eYouth — LINK Scholarship Campaign" loading="lazy">
+    <div class="pg-overlay"><span>eYouth — LINK Scholarship Campaign</span></div>
+  </div>
+  <div class="pg-item" onclick="openLB(4, 'social')">
     <img src="6edc060f2c7e.webp" alt="Halalys — Royal Canin Persian Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Royal Canin Persian Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(1, 'social')">
+  <div class="pg-item" onclick="openLB(5, 'social')">
     <img src="19e52704384c.webp" alt="Halalys — Royal Canin Favorite Meal" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Royal Canin Favorite Meal</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(2, 'social')">
+  <div class="pg-item" onclick="openLB(6, 'social')">
     <img src="118f01ab6198.webp" alt="Halalys — Fastest Animal Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Fastest Animal Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(3, 'social')">
+  <div class="pg-item" onclick="openLB(7, 'social')">
     <img src="b983bec63932.webp" alt="Halalys — Ramadan Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Ramadan Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(4, 'social')">
+  <div class="pg-item" onclick="openLB(8, 'social')">
     <img src="c68e3b115287.webp" alt="Halalys — Ramadan Mubarak App Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Ramadan Mubarak App Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(5, 'social')">
+  <div class="pg-item" onclick="openLB(9, 'social')">
     <img src="a544c4151401.webp" alt="Halalys — Camel Care Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Camel Care Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(6, 'social')">
+  <div class="pg-item" onclick="openLB(10, 'social')">
     <img src="8eab34045949.webp" alt="Halalys — Royal Canin Halloween Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Royal Canin Halloween Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(7, 'social')">
+  <div class="pg-item" onclick="openLB(11, 'social')">
     <img src="b3eec5efb4c6.webp" alt="Halalys — Thank You Christmas Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Thank You Christmas Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(8, 'social')">
+  <div class="pg-item" onclick="openLB(12, 'social')">
     <img src="46d10d814408.webp" alt="Halalys — Fish Sun Exposure Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Fish Sun Exposure Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(9, 'social')">
+  <div class="pg-item" onclick="openLB(13, 'social')">
     <img src="055988d202df.webp" alt="Halalys — Anti-Stamin Horses Product" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Anti-Stamin Horses Product</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(10, 'social')">
+  <div class="pg-item" onclick="openLB(14, 'social')">
     <img src="8cf1a5bddd9b.webp" alt="Halalys — Eid Mubarak Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Eid Mubarak Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(11, 'social')">
+  <div class="pg-item" onclick="openLB(15, 'social')">
     <img src="1879df614d01.webp" alt="Halalys — Catit Creamy Treats" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Catit Creamy Treats</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(12, 'social')">
+  <div class="pg-item" onclick="openLB(16, 'social')">
     <img src="7c67fe04722d.webp" alt="Halalys — Carnilove Cat Food" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Carnilove Cat Food</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(13, 'social')">
+  <div class="pg-item" onclick="openLB(17, 'social')">
     <img src="523e15b06eee.webp" alt="Halalys — BioClean Hand Sanitizer" loading="lazy">
     <div class="pg-overlay"><span>Halalys — BioClean Hand Sanitizer</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(14, 'social')">
+  <div class="pg-item" onclick="openLB(18, 'social')">
     <img src="b39993986471.webp" alt="Halalys — Dog Behavior Awareness" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Dog Behavior Awareness</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(15, 'social')">
+  <div class="pg-item" onclick="openLB(19, 'social')">
     <img src="9f6c426a1809.webp" alt="Halalys — App Download Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — App Download Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(16, 'social')">
+  <div class="pg-item" onclick="openLB(20, 'social')">
     <img src="2ac266b7042d.webp" alt="Rafif Beauty — App Campaign" loading="lazy">
     <div class="pg-overlay"><span>Rafif Beauty — App Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(17, 'social')">
+  <div class="pg-item" onclick="openLB(21, 'social')">
     <img src="2546e147bb69.webp" alt="Rafif Beauty — Products Campaign" loading="lazy">
     <div class="pg-overlay"><span>Rafif Beauty — Products Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(18, 'social')">
+  <div class="pg-item" onclick="openLB(22, 'social')">
     <img src="f91dddb7e22f.webp" alt="The Beauty Mom — Sunblock SPF 60" loading="lazy">
     <div class="pg-overlay"><span>The Beauty Mom — Sunblock SPF 60</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(19, 'social')">
+  <div class="pg-item" onclick="openLB(23, 'social')">
     <img src="72944b3f03c9.webp" alt="The Beauty Mom — Skincare Collection" loading="lazy">
     <div class="pg-overlay"><span>The Beauty Mom — Skincare Collection</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(20, 'social')">
+  <div class="pg-item" onclick="openLB(24, 'social')">
     <img src="d42ebe3c4d4d.webp" alt="The Beauty Mom — Deodorant Campaign" loading="lazy">
     <div class="pg-overlay"><span>The Beauty Mom — Deodorant Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(21, 'social')">
+  <div class="pg-item" onclick="openLB(25, 'social')">
     <img src="af9a5a50b344.webp" alt="Ellaithy and Associates — Internship Campaign" loading="lazy">
     <div class="pg-overlay"><span>Ellaithy and Associates — Internship Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(22, 'social')">
+  <div class="pg-item" onclick="openLB(26, 'social')">
     <img src="5950050bbfe7.webp" alt="Ellaithy and Associates — Internship" loading="lazy">
     <div class="pg-overlay"><span>Ellaithy and Associates — Internship</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(23, 'social')">
+  <div class="pg-item" onclick="openLB(27, 'social')">
     <img src="dc8741bd5198.webp" alt="Sinai White Cement — Eid Campaign" loading="lazy">
     <div class="pg-overlay"><span>Sinai White Cement — Eid Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(24, 'social')">
+  <div class="pg-item" onclick="openLB(28, 'social')">
     <img src="c04f37c9d90a.webp" alt="eYouth Business x IBM — Afaq Program" loading="lazy">
     <div class="pg-overlay"><span>eYouth Business x IBM — Afaq Program</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(25, 'social')">
+  <div class="pg-item" onclick="openLB(29, 'social')">
     <img src="40885f13e7a2.webp" alt="IBM SkillsBuild — Vibe Coding" loading="lazy">
     <div class="pg-overlay"><span>IBM SkillsBuild — Vibe Coding</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(26, 'social')">
+  <div class="pg-item" onclick="openLB(30, 'social')">
     <img src="a906d5b8d895.webp" alt="EFE x J.P.Morgan — Certificate Campaign" loading="lazy">
     <div class="pg-overlay"><span>EFE x J.P.Morgan — Certificate Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(27, 'social')">
+  <div class="pg-item" onclick="openLB(31, 'social')">
     <img src="b51ac5b00951.webp" alt="eYouth — Digital Marketing Workshop" loading="lazy">
     <div class="pg-overlay"><span>eYouth — Digital Marketing Workshop</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(28, 'social')">
+  <div class="pg-item" onclick="openLB(32, 'social')">
     <img src="c749104cfb19.webp" alt="Digilians — Digital Pioneers" loading="lazy">
     <div class="pg-overlay"><span>Digilians — Digital Pioneers</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(29, 'social')">
+  <div class="pg-item" onclick="openLB(33, 'social')">
     <img src="ecb27d767907.webp" alt="eYouth — LINK Program" loading="lazy">
     <div class="pg-overlay"><span>eYouth — LINK Program</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(30, 'social')">
+  <div class="pg-item" onclick="openLB(34, 'social')">
     <img src="9ef84e1228bc.webp" alt="Bunat Misr — Graduate Campaign" loading="lazy">
     <div class="pg-overlay"><span>Bunat Misr — Graduate Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(31, 'social')">
+  <div class="pg-item" onclick="openLB(35, 'social')">
     <img src="719ab4a1893f.webp" alt="Bunat Misr — Coming Soon Campaign" loading="lazy">
     <div class="pg-overlay"><span>Bunat Misr — Coming Soon Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(32, 'social')">
+  <div class="pg-item" onclick="openLB(36, 'social')">
     <img src="1c8de5fa08f6.webp" alt="eYouth Business x IBM SkillsBuild" loading="lazy">
     <div class="pg-overlay"><span>eYouth Business x IBM SkillsBuild</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(33, 'social')">
+  <div class="pg-item" onclick="openLB(37, 'social')">
     <img src="64dabc87eaaa.webp" alt="IBM SkillsBuild — AI Course" loading="lazy">
     <div class="pg-overlay"><span>IBM SkillsBuild — AI Course</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(34, 'social')">
+  <div class="pg-item" onclick="openLB(38, 'social')">
     <img src="5233b4ecdbfc.webp" alt="IBM SkillsBuild — Vision 2030" loading="lazy">
     <div class="pg-overlay"><span>IBM SkillsBuild — Vision 2030</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(35, 'social')">
+  <div class="pg-item" onclick="openLB(39, 'social')">
     <img src="8a3b4d8c63ca.webp" alt="Digilians — Software Dev Campaign" loading="lazy">
     <div class="pg-overlay"><span>Digilians — Software Dev Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(36, 'social')">
+  <div class="pg-item" onclick="openLB(40, 'social')">
     <img src="f30b488e4f6f.webp" alt="eYouth — 5 Free Courses" loading="lazy">
     <div class="pg-overlay"><span>eYouth — 5 Free Courses</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(37, 'social')">
+  <div class="pg-item" onclick="openLB(41, 'social')">
     <img src="fdb43f279abe.webp" alt="ITIDA Gigs — Governorates Campaign" loading="lazy">
     <div class="pg-overlay"><span>ITIDA Gigs — Governorates Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(38, 'social')">
+  <div class="pg-item" onclick="openLB(42, 'social')">
     <img src="2d305d09cebf.webp" alt="ITIDA Gigs — Freelance Campaign" loading="lazy">
     <div class="pg-overlay"><span>ITIDA Gigs — Freelance Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(39, 'social')">
+  <div class="pg-item" onclick="openLB(43, 'social')">
     <img src="e62fd4827b9a.webp" alt="Rwad Misr — Registration Campaign" loading="lazy">
     <div class="pg-overlay"><span>Rwad Misr — Registration Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(40, 'social')">
+  <div class="pg-item" onclick="openLB(44, 'social')">
     <img src="3c235d04d10b.webp" alt="Rwad Misr — Countdown Campaign" loading="lazy">
     <div class="pg-overlay"><span>Rwad Misr — Countdown Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(41, 'social')">
+  <div class="pg-item" onclick="openLB(45, 'social')">
     <img src="b44fa49691f4.webp" alt="eYouth — Skills4trend Campaign" loading="lazy">
     <div class="pg-overlay"><span>eYouth — Skills4trend Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(42, 'social')">
+  <div class="pg-item" onclick="openLB(46, 'social')">
     <img src="904a0c87c682.webp" alt="Baraaem Misr — Beyond Coding Campaign" loading="lazy">
     <div class="pg-overlay"><span>Baraaem Misr — Beyond Coding Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(43, 'social')">
+  <div class="pg-item" onclick="openLB(47, 'social')">
     <img src="5c1ca7d86421.webp" alt="Baraaem Misr — Gen Alpha Campaign" loading="lazy">
     <div class="pg-overlay"><span>Baraaem Misr — Gen Alpha Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(44, 'social')">
+  <div class="pg-item" onclick="openLB(48, 'social')">
     <img src="63095750f46b.webp" alt="Halalys — Eid Adha Mubarak Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Eid Adha Mubarak Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(45, 'social')">
+  <div class="pg-item" onclick="openLB(49, 'social')">
     <img src="86b73bcdd0e7.webp" alt="Halalys — Keep Your Dog Active Blog" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Keep Your Dog Active Blog</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(46, 'social')">
+  <div class="pg-item" onclick="openLB(50, 'social')">
     <img src="93c69dd3ad9e.webp" alt="Halalys — Holiday Checklist Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Holiday Checklist Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(47, 'social')">
+  <div class="pg-item" onclick="openLB(51, 'social')">
     <img src="1f01a19fec31.webp" alt="Halalys — Cat Toys Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Cat Toys Campaign</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(48, 'social')">
+  <div class="pg-item" onclick="openLB(52, 'social')">
     <img src="1b413d9a4613.webp" alt="Global IMC — Eid Fitr Greeting" loading="lazy">
     <div class="pg-overlay"><span>Global IMC — Eid Fitr Greeting</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(49, 'social')">
+  <div class="pg-item" onclick="openLB(53, 'social')">
     <img src="eb3552af2b9c.webp" alt="Halalys — Eid Mubarak Calligraphy" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Eid Mubarak Calligraphy</span></div>
   </div>
-  <div class="pg-item" onclick="openLB(50, 'social')">
+  <div class="pg-item" onclick="openLB(54, 'social')">
     <img src="d858e6d436f2.webp" alt="Halalys — Mother's Day Campaign" loading="lazy">
     <div class="pg-overlay"><span>Halalys — Mother's Day Campaign</span></div>
   </div>
@@ -1556,6 +1580,10 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
 
 const socialData = [
+  { src: "3e65263d6726.webp", label: "eYouth Business × IBM SkillsBuild — Intro to AI Course" },
+  { src: "deed21981586.webp", label: "eYouth Business × IBM SkillsBuild — How AI Shows Up at Work" },
+  { src: "779b57f81878.webp", label: "eYouth Business × IBM SkillsBuild — Build with IBM Bob" },
+  { src: "4d93ae670e35.webp", label: "eYouth — LINK Scholarship Campaign" },
   { src: "6edc060f2c7e.webp", label: "Halalys — Royal Canin Persian Campaign" },
   { src: "19e52704384c.webp", label: "Halalys — Royal Canin Favorite Meal" },
   { src: "118f01ab6198.webp", label: "Halalys — Fastest Animal Campaign" },
@@ -1867,6 +1895,22 @@ function openCat(c){
     img.style.transform='translate3d('+(x*26).toFixed(1)+'px,'+(y*16+bob).toFixed(1)+'px,0) rotateY('+(x*12).toFixed(2)+'deg) rotateX('+(-y*9).toFixed(2)+'deg) rotateZ('+(x*2+sway).toFixed(2)+'deg)';
     requestAnimationFrame(loop);
   })(performance.now());
+})();
+
+
+/* Debug: open the site with ?debug to list images that fail to load */
+(function(){
+  if(location.search.indexOf('debug')<0)return;
+  const names=[...new Set((document.documentElement.innerHTML.match(/[a-f0-9]{12}\.webp/g)||[]))];
+  const bad=[];let done=0;
+  const box=document.createElement('div');
+  box.style.cssText='position:fixed;left:0;right:0;bottom:0;max-height:45vh;overflow:auto;background:#000;color:#b8ff00;font:12px monospace;padding:10px;z-index:99999;white-space:pre-wrap';
+  document.body.appendChild(box);
+  const base=location.href.split('?')[0].replace(/[^/]*$/,'');
+  names.forEach(n=>{const im=new Image();
+    const fin=()=>{done++;box.textContent='checked '+done+'/'+names.length+'\nMISSING ('+bad.length+'):\n'+bad.join('\n');};
+    im.onload=fin;im.onerror=()=>{bad.push(n);fin();};
+    im.src=base+n+'?t='+Date.now();});
 })();
 
 /* Sticky panels taller than the viewport must stick by their BOTTOM edge, otherwise their lower part can never be reached */
