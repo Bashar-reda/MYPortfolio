@@ -1,2 +1,44 @@
-# MYPortfolio
-Portfolio website of Bashar Reda — Graphic Designer based in Cairo. Social media, branding, print, presentation design, illustrations &amp; Arabic typography. Single-file HTML, hosted on GitHub Pages.
+# Bashar Reda — Graphic Designer Portfolio
+
+Single-file portfolio website (HTML/CSS/JS, all images embedded). No build step, no dependencies except Google Fonts.
+
+## Live site
+Deploy with GitHub Pages and the site will be available at `https://<username>.github.io/<repo>/`
+(or `https://<username>.github.io` if the repo is named `<username>.github.io`).
+
+## Files
+| File | Purpose |
+|------|---------|
+| `index.html` | The whole website (~24 MB, images embedded as base64) |
+| `README.md` | This file |
+
+## Deploy on GitHub Pages
+1. Create a new repository (e.g. `basharreda.github.io`).
+2. Upload `index.html` and `README.md` to the `main` branch (Add file → Upload files, or GitHub Desktop / `git push` if the browser upload is slow).
+3. Settings → Pages → Source: **Deploy from a branch** → Branch: `main` / `(root)` → Save.
+4. Wait 1–2 minutes, then open the site URL.
+
+## Sections
+Hero · Clients · Experience · Skills · Portfolio (Social Media, Print Design, Branding, Presentation Design, Illustrations, Typography, Play Store Screens*) · Education · Contact
+
+\* Play Store Screens tab is currently empty.
+
+## Features
+- Stacked sliding panels on scroll (desktop), normal scrolling on mobile
+- Floating avatar with cursor-follow tilt
+- Scroll-linked headline reveal, marquee image rows, stacked portfolio category cards
+- Image lightbox and slide-by-slide presentation viewer
+- Custom cursor (desktop)
+
+## Editing notes
+- Portfolio images live in JS arrays inside `index.html`: `socialData`, `printData`, `typographyData`, `illustrationData`, `presentationDecks`.
+- Social Media and Illustrations grids exist in both HTML and JS; keep the item count and order identical when adding images.
+- Keep the file under GitHub's 100 MB file limit.
+
+## Contact
+Bashar Reda — basharreda25@gmail.com — +20 120 416 9861 — Cairo, Egypt
+
+---
+
+## بالعربي (مختصر)
+الموقع ملف واحد `index.html` فيه كل الصور. ارفعه على GitHub في repository جديد، ثم من Settings → Pages اختار branch `main` وهيشتغل على رابط `github.io` بعد دقيقة أو اتنين.
